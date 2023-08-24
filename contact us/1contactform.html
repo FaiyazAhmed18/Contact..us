@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="1contactform.css">
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Welcome to your ultimate travel assistant! Whether you're planning a relaxing beach getaway, an adventurous mountain trek, or a culturally enriching city exploration, we've got you covered.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Rampura wapda Road,<br>Dhaka, Bangladesh.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+8801625871106</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>faiyaz@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="" id="" required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<form action="process_form.php" method="post">
+    <!-- ... other input fields ... -->
+    <div class="inputBox">
+        <input type="text" name="full_name" required="required">
+        <span>Full Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" name="email" required="required">
+        <span>Email</span>
+    </div>
+    <div class="inputBox">
+        <textarea name="message" id="" required="required"></textarea>
+        <span>Type your Message...</span>
+    </div>
+    <!-- ... other input fields ... -->
+    <div class="inputBox">
+        <input type="submit" value="Send">
+    </div>
+</form>
+</html>
